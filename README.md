@@ -2,17 +2,17 @@
 
 Örnek E-Ticaret Sitesi Veritabanı Tasarımı
 
-Bu proje, Sahibinden.com'un veritabanının klonunu oluşturmak amacıyla hazırlanmıştır. Veritabanı, SQL Server kullanılarak tasarlanmıştır ve 7 adet tablodan oluşmaktadır. Bu tablolar, kullanıcılar, ürünler, kategoriler, siparişler, sipariş detayları, adresler ve ödeme bilgileri tablolarıdır.
+Bu proje, E-ticaret sitesinin veritabanının klonunu oluşturmak amacıyla hazırlanmıştır. Veritabanı, SQL Server kullanılarak tasarlanmıştır ve 7 adet tablodan oluşmaktadır. Bu tablolar, kullanıcılar, ürünler, kategoriler, siparişler, sipariş detayları, adresler ve ödeme bilgileri tablolarıdır.
 
 Tablo Açıklamaları
 Users Tablosu
 Bu tablo, Sahibinden.com'a kayıtlı olan kullanıcıların bilgilerini tutar. Kullanıcılara ait özellikler user_id, username, email, password, registration_date ve last_login'dir.
 
 Products Tablosu
-Bu tablo, Sahibinden.com'da satılan ürünlere ait bilgileri tutar. Ürünlere ait özellikler product_id, product_name, description, category_id, price ve stock_quantity'dir.
+Bu tablo, E-ticaret sitesinde satılan ürünlere ait bilgileri tutar. Ürünlere ait özellikler product_id, product_name, description, category_id, price ve stock_quantity'dir.
 
 Categories Tablosu
-Bu tablo, Sahibinden.com'da bulunan ürün kategorilerinin bilgilerini tutar. Kategorilere ait özellikler category_id ve category_name'dir.
+Bu tablo,E-ticaret sitesinde  bulunan ürün kategorilerinin bilgilerini tutar. Kategorilere ait özellikler category_id ve category_name'dir.
 
 Orders Tablosu
 Bu tablo, kullanıcıların verdiği siparişlerin bilgilerini tutar. Siparişlere ait özellikler order_id, user_id, order_date ve total_price'dır.
@@ -29,4 +29,4 @@ Bu tablo, kullanıcıların ödeme bilgilerini tutar. Ödeme bilgilerine ait öz
 Veritabanı Diyagramı
 ![Veritabanı Diyagramı](ETradeDiagram.png)
 
-Yukarıdaki diyagram, Sahibinden.com veritabanının ilişkilerini göstermektedir. Veritabanı, Users tablosu ile diğer tüm tablolar arasında birer-manyer ilişkileri içermektedir.
+Yukarıdaki diyagram, E-ticaret sitesinin veritabanının ilişkilerini göstermektedir. Veritabanı, Users tablosu ile diğer tüm tablolar arasında birer-manyer ilişkileri içermektedir.
